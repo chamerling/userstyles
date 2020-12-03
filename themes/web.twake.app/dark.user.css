@@ -11,6 +11,7 @@
  @-moz-document domain('web.twake.app') {
     :root {
         
+        /* Use Nord Theme, https://www.nordtheme.com/docs/colors-and-palettes */
         --nord0: #2E3440;
         --nord1: #3B4252;
         --nord2: #434C5E;
