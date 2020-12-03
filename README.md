@@ -5,6 +5,8 @@ Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Op
 
 ## Main themes
 
+If install does not work from the link click, you can import theme from directly Stylus and copy/paste the theme...
+
 ### Twake.app
 📦 [Install this style](https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css)
 
