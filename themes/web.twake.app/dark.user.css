@@ -1,0 +1,177 @@
+/*! ==UserStyle==
+ * @name        Twake Dark Mode
+ * @namespace   StylusThemes
+ * @version     0.0.1
+ * @homepageURL https://github.com/chamerling/userstyles/
+ * @updateURL   https://github.com/chamerling/userstyles/raw/master/web.twake.app/dark.user.css
+ * @license     MIT
+ * @author      chamerling
+ * ==/UserStyle== */
+ 
+ @-moz-document domain('web.twake.app') {
+    :root {
+        
+        --nord0: #2E3440;
+        --nord1: #3B4252;
+        --nord2: #434C5E;
+        --nord3: #4C566A;
+        --nord4: #D8DEE9;
+        --nord5: #E5E9F0;
+        --nord6: #ECEFF4;
+        --nord7: #8FBCBB;
+        --nord8: #88C0D0;
+        --nord9: #81A1C1;
+        --nord10: #5E81AC;
+        --nord11: #BF616A;
+        --nord12: #D08770;
+        --nord13: #EBCB8B;
+        --nord14: #A3BE8C;
+        --nord15: #B48EAD;
+        
+        
+        /* Twake variables */
+        --primary: var(--nord8);
+        --primary-hover: var(--nord7);
+        --secondary: var(--nord0);
+        --primary-background: var(--nord0);
+        --black: var(--nord6);
+        --black-alpha-1: #18295252;
+        --black-alpha-2: #18295255;
+        --grey-light: #464646;
+        --grey-dark: #92929c;
+        --grey-background: var(--nord0);
+        --white: var(--nord1);
+        --pale-grey: #5d58d7;
+        --default-border-radius: 3px;
+        --default-border-radius-large: 5px;
+        --green: var(--nord14);
+        --red: var(--nord11);
+        
+        /* Extension variables */
+        --avatar-size: 40px;
+        --avatar-size-small: 20px;
+    }
+
+    .workspace .image {
+        background-color: var(--nord10);    
+    }
+
+    .workspace .name {
+        color: var(--nord4);
+    }
+
+    .workspace.is_selected .image, .workspace:hover .image {
+        background-color: var(--nord9)
+    }
+
+    .workspace.is_selected .name, .workspace:hover .name {
+        color: var(--nord5);
+    }
+
+    .dragged .thread-section.gradient, .thread-container .thread-section.gradient {
+        background: linear-gradient(180deg, var(--nord1) 40%,#0000);
+    }
+
+    .messages-view .messages-scroller-parent.scrolled-up:after {
+        box-shadow: none;
+    }
+
+    .message-input {
+        background: var(--nord1);  
+    }
+
+    .input {
+        color: var(--grey-background);
+    }
+
+    .channel_category {
+        color: var(--black);
+    }
+
+    .channel:hover {
+        background: var(--nord3);
+    }
+
+    .user_head.border {
+        border: none;
+    }
+
+    .new-thread-button .message {
+        color: var(--black);
+    }
+
+    .dragged .thread.with-block, .thread-container .thread.with-block {
+        border: 1px solid #343434;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+    /* This fixes the border radius from the element above*/
+    .dragged .thread-section .message, .thread-container .thread-section .message {
+        background: none;
+    }
+
+    .file {
+        background: var(--primary-background);
+    }
+
+    .message .sender-space {
+        width: var(--avatar-size);
+    }
+
+    .message .sender-space .app_icon, .message .sender-space .sender-head {
+        width: var(--avatar-size);
+        height: var(--avatar-size);
+    }
+
+    .thread-container .thread-section.small-section .message .sender-space .sender-head { 
+        width: var(--avatar-size-small);
+        height: var(--avatar-size-small);
+    }
+
+    .current-company-header .current-company .user-info {
+        color: var(--black);
+    }
+
+    .current-company-header .current-company .name .text {
+        color: var(--black);
+    }
+
+    .channels_view {
+        background: var(--nord0);
+    }
+
+    .markdown .inline-code {
+        background: var(--nord0);
+    }
+
+    .main_view .app_views .app_side .side_header {
+        background: var(--nord1);
+        color: var(--nord4);
+    }
+
+
+    .main_view .app_views .app_side .side_header .close{
+        color: var(--nord4);
+    }
+
+    .group_switch .company_name {
+        color: var(--nord4);
+    }
+
+    .mediumPopupComponent .componentContainer .component {
+        background: var(--nord3);
+    }
+
+    .bottom_input > .new-thread .message .message-input {
+        background: var(--nord0);
+    }
+
+    .bottom_input > .new-thread .thread {
+        background: var(--nord0);
+    }
+
+    .message-input .autocomplete div.input, .message-input .autocomplete div.input textarea.input {
+        background: var(--nord6);
+    }
+ }
