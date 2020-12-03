@@ -175,4 +175,21 @@
     .message-input .autocomplete div.input, .message-input .autocomplete div.input textarea.input {
         background: var(--nord6);
     }
- }
+  
+   .markdown .user_twacode.highlighted, .markdown .user_twacode.with_user.highlighted {
+      background: var(--nord9);
+   }
+
+   .markdown .user_twacode.with_user:hover {
+      color: var(--nord6)
+   }
+
+   .channel .group_count {
+      background: var(--nord10);
+   }
+
+   .channel.selected:hover {
+      background: var(--nord10);
+      color: var(--nord6);
+   }
+}
