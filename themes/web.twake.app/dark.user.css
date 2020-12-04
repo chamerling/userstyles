@@ -196,4 +196,8 @@
    .main_view .channel_header .title .user_image {
      border: none; 
    }
+  
+   .workspace.is_selected:after {
+     background: var(--nord8);
+   }
 }
