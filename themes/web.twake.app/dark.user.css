@@ -192,4 +192,8 @@
       background: var(--nord10);
       color: var(--nord6);
    }
+
+   .main_view .channel_header .title .user_image {
+     border: none; 
+   }
 }
