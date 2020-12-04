@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.2
+ * @version     0.0.3
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -199,5 +199,9 @@
   
    .workspace.is_selected:after {
      background: var(--nord8);
+   }
+  
+   .loginPage .center_box_container .center_box {
+     background: var(--nord2);
    }
 }
