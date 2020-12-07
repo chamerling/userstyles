@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.4
+ * @version     0.0.5
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -50,7 +50,7 @@
         
         /* Extension variables */
         --avatar-size: 40px;
-        --avatar-size-small: 20px;
+        --avatar-size-small: 25px;
     }
 
     .workspace .image {
