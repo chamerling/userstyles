@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.3
+ * @version     0.0.4
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -202,6 +202,10 @@
    }
   
    .loginPage .center_box_container .center_box {
+     background: var(--nord2);
+   }
+  
+   .popupComponent {
      background: var(--nord2);
    }
 }
