@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.5
+ * @version     0.0.6
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -51,6 +51,7 @@
         /* Extension variables */
         --avatar-size: 40px;
         --avatar-size-small: 25px;
+        --avatar-size-big: 60px;
     }
 
     .workspace .image {
@@ -208,4 +209,14 @@
    .popupComponent {
      background: var(--nord2);
    }
+  
+  .user-card .content-popup .avatar {
+    width: unset;
+  }
+  
+  .user-card .content-popup .avatar .user_head {
+    border-radius: 0;
+    width: var(--avatar-size-big);
+    height: var(--avatar-size-big);
+  }
 }
