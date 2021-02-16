@@ -1,14 +1,14 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.6
+ * @version     0.0.7
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
  * @author      chamerling
  * ==/UserStyle== */
  
- @-moz-document domain('web.twake.app') {
+ @-moz-document domain('web.twake.app'), domain("chat.twake.app") {
     :root {
         
         /* Use Nord Theme, https://www.nordtheme.com/docs/colors-and-palettes */
@@ -53,7 +53,49 @@
         --avatar-size-small: 25px;
         --avatar-size-big: 60px;
     }
+     
+    .ant-typography {
+      color: var(--nord4);     
+    }
+     
+     .ant-tabs-tab-active>.ant-tabs-tab-btn {
+         background-color: var(--nord3)
+     }
+     
+    .ant-layout .global-view-layout .global-view-header {
+       background: var(--nord1);
+    }
 
+    .ant-layout .global-view-layout .global-view-content .main-view-tabs-header {
+      background: var(--nord1);
+    }
+     
+    .ant-avatar-group .ant-avatar {
+      border: none;     
+    }
+     
+    .ant-layout {
+      background: var(--nord1);    
+    }
+     
+    /* modal title */
+    h5.ant-typography {
+      color: var(--nord4);
+    }
+     
+    /* company/workspace sidebar */
+    .ant-layout-sider {
+      background: var(--nord0);
+    }
+     
+    .ant-layout-footer {
+      background: var(--nord1);    
+    }
+     
+    .main-view-tabs .add-tab-button {
+      background-color: var(--pale-grey);     
+    }
+     
     .workspace .image {
         background-color: var(--nord10);    
     }
@@ -76,6 +118,10 @@
 
     .messages-view .messages-scroller-parent.scrolled-up:after {
         box-shadow: none;
+    }
+     
+    .thread-container .thread.with-block .message {
+      color: var(--nord5);    
     }
 
     .message-input {
