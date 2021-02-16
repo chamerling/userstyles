@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.7
+ * @version     0.0.8
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -53,14 +53,23 @@
         --avatar-size-small: 25px;
         --avatar-size-big: 60px;
     }
+  
+    .message .message-content .message-content-header {
+       color: var(--nord4);
+    }
+     
+    .ant-layout .global-view-layout .global-side-view .side-header {
+      background: var(--nord2);
+      color: var( --nord4);
+    }
      
     .ant-typography {
       color: var(--nord4);     
     }
      
-     .ant-tabs-tab-active>.ant-tabs-tab-btn {
-         background-color: var(--nord3)
-     }
+    .ant-tabs-tab-active>.ant-tabs-tab-btn {
+      background-color: var(--nord3)
+    }
      
     .ant-layout .global-view-layout .global-view-header {
        background: var(--nord1);
