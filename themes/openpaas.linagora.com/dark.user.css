@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        OpenPaaS Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.1
+ * @version     0.0.2
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/openpaas.linagora.com/dark.user.css
  * @license     MIT
@@ -106,7 +106,7 @@
     }
     
     .inbox-aside .clickable.selected {
-        color: var(--accent-color);			
+        color: var(--nord9);			
     }
     
     md-menu-content {
