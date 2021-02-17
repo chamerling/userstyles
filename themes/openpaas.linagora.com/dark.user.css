@@ -1,0 +1,207 @@
+/*! ==UserStyle==
+ * @name        OpenPaaS Dark Mode
+ * @namespace   github.com/chamerling/userstyles
+ * @version     0.0.1
+ * @homepageURL https://github.com/chamerling/userstyles/
+ * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/openpaas.linagora.com/dark.user.css
+ * @license     MIT
+ * @author      chamerling
+ * ==/UserStyle== */
+
+@-moz-document domain("openpaas.linagora.com") {
+    :root { 
+        /* Use Nord Theme, https://www.nordtheme.com/docs/colors-and-palettes */
+        --nord0: #2E3440;
+        --nord1: #3B4252;
+        --nord2: #434C5E;
+        --nord3: #4C566A;
+        --nord4: #D8DEE9;
+        --nord5: #E5E9F0;
+        --nord6: #ECEFF4;
+        --nord7: #8FBCBB;
+        --nord8: #88C0D0;
+        --nord9: #81A1C1;
+        --nord10: #5E81AC;
+        --nord11: #BF616A;
+        --nord12: #D08770;
+        --nord13: #EBCB8B;
+        --nord14: #A3BE8C;
+        --nord15: #B48EAD;
+        
+        /* OpenPaaS Variables */
+        
+        --esn-popover-bg: var(--nord3);
+    
+    
+        /* Twake variables */
+        --primary: var(--nord8);
+        --primary-hover: var(--nord7);
+        --secondary: var(--nord0);
+        --primary-background: var(--nord0);
+        --black: var(--nord6);
+        --black-alpha-1: #18295252;
+        --black-alpha-2: #18295255;
+        --grey-light: #464646;
+        --grey-dark: #92929c;
+        --grey-background: var(--nord0);
+        --white: var(--nord1);
+        --default-border-radius: 3px;
+        --default-border-radius-large: 5px;
+        --green: var(--nord14);
+        --red: var(--nord11);
+        
+        /* Local variables */
+        --pale-grey: #5d58d7;
+
+        --main-background: var(--nord1);
+        --second-background: var(--nord3);
+        --accent-color: var(--pale-grey);
+        --text-color: var(--nord4);
+    
+        /* Extension variables */
+        --avatar-size: 40px;
+        --avatar-size-small: 25px;
+        --avatar-size-big: 60px;
+    }
+    
+    body {
+        background: var(--main-background);
+    }
+    
+    #header {
+        background-color: var(--accent-color);
+    }
+    
+    #header #sub-header {
+      background-color: var(--accent-color);
+        box-shadow: none;
+    }
+    
+    @media (min-width: 992px) {
+        .inbox-main-col {
+            background-color: var(--main-background);
+        }
+    }
+    
+    .esn-popover {
+        background: var(--second-background);
+    }
+    
+    .inbox-main-aside {
+            background-color: var(--main-background);
+    }
+    
+    /* SIDEBAR */
+    
+    .badge {
+        background-color: var(--accent-color);
+    }
+    
+    .inbox-aside .menu-heading .title .text {
+        color: var(--accent-color);	
+    }
+    
+    .listview .folder-with-icon.toggle-submenu .badge-container i {
+        color: var(--accent-color);		
+    }
+    
+    .inbox-aside .clickable.selected {
+        color: var(--accent-color);			
+    }
+    
+    md-menu-content {
+        background-color: var(--second-background);
+        color: var(--text-color);
+    }
+    
+    md-menu-content.md-default-theme md-menu-item md-icon, md-menu-content md-menu-item md-icon {
+        color: var(--text-color);
+    }
+    
+    md-menu-item .md-button > span {
+        color: var(--text-color);
+    }
+            
+    /* MAIL LIST */
+    
+    .card {
+        background: var(--main-background);
+    }
+    
+    .listview.lv-lg .lv-item:hover {
+        background-color: var(--nord3);
+    }
+    
+    .inbox-root .emailer {
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    
+    .inbox-subject-inline {
+        color: var(--nord5);
+    }
+    
+    .date-and-indicators-container {
+        color: var(--text-color);
+    }
+    
+    @media (min-width: 992px) {
+        .inbox-root .clickable:not(.text-danger):not(.menu-root):hover {
+            background-color: var(--nord2);
+            color: var(--nord4);
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .listview .folder-with-icon.toggle-submenu {
+            background-color: var(--main-background); 
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .listview .clickable.selected {
+            background-color: var(--nord3);
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .inbox-root .inbox-infinite-list .inbox-items-group .inbox-list-item .inbox-hover-actions {
+          background-color: var(--nord2);	
+      }
+    }
+    
+    @media (min-width: 1366px) {
+      .inbox-root .inbox-items-group .inbox-list-item .inbox-hover-actions {
+            box-shadow: none;
+        }
+    }
+    
+    /* unread email title */
+    .inbox-root .inbox-items-group .inbox-list-item .inbox-list-item-content .media-body.bold .lv-title .inbox-subject-inline, .inbox-root .inbox-items-group .inbox-list-item .inbox-list-item-content .media-body.bold .inbox-from .lv-title {
+        color: var(--text-color);
+        font-weight: 800;
+    }
+    
+    inbox-sidebar-email {
+        color: var(--nord4);
+    }
+    
+    /* MAIL VIEW */
+    
+    .email-view .email-header {
+        color: var(--nord4);
+        background-color: var(--nord0);
+    }
+    
+    .email-view .email-header .line-header {
+        font-style: normal;
+    }
+    
+    .email-view .thread-title {
+        color: var(--nord4);
+    }
+    
+    inbox-message-body {
+        color: var(--nord4);
+    }
+}
