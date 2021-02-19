@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Twake Dark Mode
  * @namespace   github.com/chamerling/userstyles
- * @version     0.0.8
+ * @version     0.0.9
  * @homepageURL https://github.com/chamerling/userstyles/
  * @updateURL   https://github.com/chamerling/userstyles/raw/main/themes/web.twake.app/dark.user.css
  * @license     MIT
@@ -64,6 +64,10 @@
     }
      
     .ant-typography {
+      color: var(--nord4);     
+    }
+  
+    .ant-typography.ant-typography-secondary {
       color: var(--nord4);     
     }
      
